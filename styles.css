@@ -94,6 +94,57 @@ a {
     color: white;
 }
 
+.language-switcher {
+    display: flex;
+    background-color: #2b3945; /* Color de fondo por defecto */
+    border-radius: 30px;
+    overflow: hidden; /* Para que no se vea el borde */
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-switcher button {
+    color: white;
+    background-color: #2b3945; /* Color de fondo por defecto */
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 25px;
+    cursor: pointer;
+    position: relative;
+    flex: 1;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.language-switcher button:first-child {
+    border-radius: 30px 0 0 30px; /* Redondeado solo en la esquina izquierda */
+}
+
+.language-switcher button:last-child {
+    border-radius: 0 30px 30px 0; /* Redondeado solo en la esquina derecha */
+}
+
+.language-switcher button:hover,
+.language-switcher button.active {
+    background-color: #FF3800; /* Color de fondo al hacer hover o cuando es activo */
+    color: #FFFFFF;
+}
+
+.language-switcher button + button {
+    position: relative;
+}
+
+.language-switcher button + button::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: white;
+}
+
 
 
 .btn-try-demo {
