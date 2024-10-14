@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     i18next.use(i18nextHttpBackend).init({
-        lng: 'en', // Idioma predeterminado
+        language: 'en', // Idioma predeterminado
         debug: true,
         backend: {
-            loadPath: '/i18next/{{lng}}.json'
+            loadPath: '/i18next/{{language}}.json'
         }
     }, function(err, t) {
         updateContent();
@@ -38,10 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     buttons.forEach(button => {
         button.addEventListener('click', function() {
-            // Remueve la clase 'active' de todos los botones
             buttons.forEach(btn => btn.classList.remove('active'));
             
-            // Agrega la clase 'active' solo al botón presionado
             button.classList.add('active');
         });
     });
