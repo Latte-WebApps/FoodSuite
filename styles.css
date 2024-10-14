@@ -16,6 +16,15 @@ body {
     color: #00141A;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
 /* home section */
 .home-section {
     width: 100%;
