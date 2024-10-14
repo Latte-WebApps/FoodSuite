@@ -1,0 +1,65 @@
+{
+  "home": "Home",
+  "features": "Features",
+  "pricing": "Pricing",
+  "try_demo": "TRY DEMO!",
+  "transform_management": "Transform the Management of Your Restaurant with Our Comprehensive Solution",
+  "optimize_workflow": "Optimize your workflow, control inventory, and improve efficiency with an intuitive interface.",
+  "problems_heading": "Are you having trouble keeping control of your inventory?",
+  "problems_description": "Managing inventory in a restaurant can be overwhelming. Inconsistencies, stock deviations, and lack of real-time updates can lead to significant losses and operational issues. Our app simplifies inventory management with easy-to-use tools that allow you to monitor and update your stock instantly, avoiding costly mistakes and improving operational efficiency.",
+  "efficient_management": "The Perfect Solution for Efficient Management",
+  "pricing_title": "Pricing",
+  "simple_pricing": "Simple and Transparent Pricing",
+  "get_started": "GET STARTED",
+  "pricing_includes": "What's included",
+    
+  "features_section": [
+    "Manage your inventory from any location with real-time updates and alerts, ensuring you stay in control no matter where you are.",
+    "Sync data across all devices in real-time, ensuring consistency and up-to-date information.",
+    "Generate detailed reports to assess team performance and sales.",
+    "Enhance your restaurant's productivity with streamlined processes and automated tasks.",
+    "Access an easy-to-use platform that streamlines daily operations."
+ 
+  ],
+
+  "basic": {
+    "title": "Basic",
+    "subtitle": "For individuals",
+    "description": "Ideal for those who need basic management and inventory control features.",
+    "price": "$99 / month",
+    "features": [
+      "All analytics features",
+      "Up to 1,000,000 tracked visits",
+      "Premium support",
+      "Up to 10 team members"
+    ]
+  },
+  "pro": {
+    "title": "Professional",
+    "subtitle": "For small businesses",
+    "description": "Perfect for startups that need advanced control.",
+    "price": "$199 / month",
+    "features": [
+      "All analytics features",
+      "Up to 2,000,000 tracked visits",
+      "Dedicated support",
+      "Up to 25 team members"
+    ]
+  },
+  "enterprise": {
+    "title": "Enterprise",
+    "subtitle": "For large companies",
+    "description": "For businesses that require large-scale management and support.",
+    "price": "$399 / month",
+    "features": [
+      "Advanced analytics features",
+      "Unlimited tracked visits",
+      "24/7 support",
+      "Unlimited team members"
+    ]
+  },
+  "footer_heading": "Latte Company. We're here",
+  "footer_description": "Hello, we are Latte, and our app FoodSuite is designed to help you manage your restaurant efficiently. We're committed to providing the right tools and insights to help you achieve the best results in your business.",
+  "footer_copyright": "© 2024 Latte. All Rights Reserved."
+
+}
