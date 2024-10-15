@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     i18next.use(i18nextHttpBackend).init({
-        language: 'en', // Idioma predeterminado
+        lng: 'en', // Idioma predeterminado
         debug: true,
         backend: {
-            loadPath: '/i18next/{{language}}.json'
+            loadPath: '/i18next/{{lng}}.json'
         }
     }, function(err, t) {
         updateContent();
