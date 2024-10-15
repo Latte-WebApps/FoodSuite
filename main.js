@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     i18next.use(i18nextHttpBackend).init({
         lng: 'en', // Idioma predeterminado
+        fallbackLng: 'en', 
         debug: true,
         backend: {
             loadPath: '/assets/i18next/{{lng}}.json'
@@ -8,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, function(err, t) {
         updateContent();
     });
+    
 
     document.getElementById('hamburger-menu').addEventListener('click', function() {
         document.getElementById('navbar-menu').classList.toggle('active');
@@ -27,12 +29,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementById('btn-en').addEventListener('click', function() {
-        i18next.changeLanguage('en', updateContent);
+        if (i18next.language !== 'en') {
+            i18next.changeLanguage('en', updateContent);
+        }
     });
-
+    
     document.getElementById('btn-es').addEventListener('click', function() {
-        i18next.changeLanguage('es', updateContent);
+        if (i18next.language !== 'es') {
+            i18next.changeLanguage('es', updateContent);
+        }
     });
+    
 
     const buttons = document.querySelectorAll('.language-switcher button');
 
