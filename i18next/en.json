@@ -12,7 +12,14 @@
   "simple_pricing": "Simple and Transparent Pricing",
   "get_started": "GET STARTED",
   "pricing_includes": "What's included",
-    
+  "about": "About",
+  "about_product": "About the product",
+  "about_team": "About the team",
+  "team": "Team",
+  "developer": "Developer",
+  "carreer": "Sofware Engineer",
+
+
   "features_section": [
     "Manage your inventory from any location with real-time updates and alerts, ensuring you stay in control no matter where you are.",
     "Sync data across all devices in real-time, ensuring consistency and up-to-date information.",

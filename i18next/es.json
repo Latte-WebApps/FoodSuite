@@ -12,6 +12,14 @@
   "simple_pricing": "Precios Simples y Transparentes",
   "get_started": "EMPEZAR",
   "pricing_includes": "Lo que incluye",
+  "about": "Sobre nosotros",
+  "about_product": "Sobre el producto",
+  "about_team": "Sobre el equipo",
+  "team": "Equipo",
+  "developer": "Desarrollador",
+  "carreer": "Ingeniero de Software",
+
+
     
   "features_section": [
     "Gestiona tu inventario desde cualquier ubicación con actualizaciones y alertas en tiempo real, asegurando el control en todo momento.",
