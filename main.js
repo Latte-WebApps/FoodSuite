@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fallbackLng: 'en', 
         debug: true,
         backend: {
-            loadPath: '/assets/i18next/{{lng}}.json'
+            loadPath: 'assets/i18next/{{lng}}.json'
         }
     }, function(err, t) {
         updateContent();
