@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         lng: 'en', // Idioma predeterminado
         debug: true,
         backend: {
-            loadPath: '/i18next/{{lng}}.json'
+            loadPath: '//i18next/{{lng}}.json'
         }
     }, function(err, t) {
         updateContent();
