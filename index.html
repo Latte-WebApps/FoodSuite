@@ -8,7 +8,7 @@
   <script src="https://kit.fontawesome.com/996f4b939f.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.11.5/i18next.js"></script>
   <script src="https://unpkg.com/i18next@23.11.5/dist/umd/i18next.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.4.0/i18nextHttpBackend.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend@1.4.0/i18nextHttpBackend.min.js"></script>
   <script src="main.js"></script>
   <title>Food Suit</title>
 </head>
@@ -19,7 +19,7 @@
       <div class="navbar-hamburger" id="hamburger-menu">
         <i class="fas fa-bars"></i>
       </div>
-      <div class="navbar-brand"><img src="./assets/images/FOODSUIT.svg" alt="foodsuit brand logo" width="80px"></div>
+      <div class="navbar-brand"><img src="./assets/images/foodsuit.svg" alt="foodsuit brand logo" width="80px"></div>
       <ul class="navbar-menu" id="navbar-menu">
         <li><a href="#home" data-i18n="home"></a></li>
         <li><a href="#about-us" data-i18n="about">About us</a></li>
@@ -194,8 +194,7 @@
 <!-- Developers Section -->
 <section id="team" class="developers-section">
 
-  <h2 class="section-title">Meet the Developers</h2>
-  <p class="section-subtitle">The talented minds behind our platform</p>
+  <h2 class="section-title" data-i18n="members">Team</h2>
   <div class="developer-cards">
       <!-- Developer Card 1 -->
       <div class="developer-card">
