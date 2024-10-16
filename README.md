@@ -11,7 +11,6 @@ Additionally, supports internationalization
 with both English and Spanish language options (EN/ES).
 
 ## Technologies Used
-
 - **HTML**
 - **CSS** 
 - **Javascript**
