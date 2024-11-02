@@ -439,9 +439,10 @@ a {
 
 .video-container {
     background-color: #E5F9FF;
+
     border-radius: 10px;
-    width: 100%;
-    height: 150px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Ajusta el tamaño según sea necesario */
+    width: auto;
     margin-top: 1rem;
 }
 
