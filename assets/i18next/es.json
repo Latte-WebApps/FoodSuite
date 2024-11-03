@@ -1,0 +1,72 @@
+{
+  "home": "Inicio",
+  "features": "Características",
+  "pricing": "Precios",
+  "try_demo": "¡PRUEBA DEMO!",
+  "transform_management": "Transforma la Gestión de tu Restaurante con Nuestra Solución Integral",
+  "optimize_workflow": "Optimiza tu flujo de trabajo, controla el inventario y mejora la eficiencia con una interfaz intuitiva.",
+  "problems_heading": "¿Tienes problemas para mantener el control de tu inventario?",
+  "problems_description": "Gestionar el inventario en un restaurante puede ser abrumador. Las inconsistencias, desviaciones de stock y la falta de actualizaciones en tiempo real pueden llevar a pérdidas significativas y problemas operativos. Nuestra aplicación simplifica la gestión del inventario con herramientas fáciles de usar que te permiten monitorear y actualizar tu stock al instante, evitando errores costosos y mejorando la eficiencia operativa.",
+  "efficient_management": "La Solución Perfecta para una Gestión Eficiente",
+  "pricing_title": "Precios",
+  "simple_pricing": "Precios Simples y Transparentes",
+  "get_started": "EMPEZAR",
+  "pricing_includes": "Lo que incluye",
+  "about": "Sobre nosotros",
+  "about_product": "Sobre el producto",
+  "about_team": "Sobre el equipo",
+  "team": "Equipo",
+  "members": "Our Team Members",
+  "developer": "Desarrollador",
+  "carreer": "Ingeniero de Software",
+
+
+    
+  "features_section": [
+    "Gestiona tu inventario desde cualquier ubicación con actualizaciones y alertas en tiempo real, asegurando el control en todo momento.",
+    "Sincroniza datos en todos los dispositivos en tiempo real, garantizando consistencia e información actualizada.",
+    "Genera informes detallados para evaluar el rendimiento del equipo y las ventas.",
+    "Mejora la productividad de tu restaurante con procesos optimizados y tareas automatizadas.",
+    "Accede a una plataforma fácil de usar que agiliza las operaciones diarias."
+  ],
+
+  "basic": {
+    "title": "Básico",
+    "subtitle": "Para individuos",
+    "description": "Ideal para quienes necesitan funciones básicas de gestión y control de inventarios.",
+    "price": "$99 / mes",
+    "features": [
+      "Todas las funciones de análisis",
+      "Hasta 1,000,000 visitas rastreadas",
+      "Soporte premium",
+      "Hasta 10 miembros del equipo"
+    ]
+  },
+  "pro": {
+    "title": "Profesional",
+    "subtitle": "Para pequeñas empresas",
+    "description": "Perfecto para startups que necesitan un control avanzado.",
+    "price": "$199 / mes",
+    "features": [
+      "Todas las funciones de análisis",
+      "Hasta 2,000,000 visitas rastreadas",
+      "Soporte dedicado",
+      "Hasta 25 miembros del equipo"
+    ]
+  },
+  "enterprise": {
+    "title": "Empresarial",
+    "subtitle": "Para grandes empresas",
+    "description": "Para negocios que requieren gestión y soporte a gran escala.",
+    "price": "$399 / mes",
+    "features": [
+      "Funciones de análisis avanzadas",
+      "Visitas rastreadas ilimitadas",
+      "Soporte 24/7",
+      "Miembros de equipo ilimitados"
+    ]
+  },
+  "footer_heading": "Latte Company. Estamos aquí",
+  "footer_description": "Hola, somos Latte, y nuestra app FoodSuite está diseñada para ayudarte a gestionar tu restaurante de manera eficiente. Nos comprometemos a proporcionar las herramientas y conocimientos adecuados para ayudarte a lograr los mejores resultados en tu negocio.",
+  "footer_copyright": "© 2024 Latte. Todos los derechos reservados."
+}

@@ -16,6 +16,15 @@ body {
     color: #00141A;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
 /* home section */
 .home-section {
     width: 100%;
@@ -83,6 +92,57 @@ body {
     border-radius: 20px;
     background:#F11717;
     color: white;
+}
+
+.language-switcher {
+    display: flex;
+    background-color: #2b3945; /* Color de fondo por defecto */
+    border-radius: 30px;
+    overflow: hidden; /* Para que no se vea el borde */
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-switcher button {
+    color: white;
+    background-color: #2b3945; /* Color de fondo por defecto */
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 25px;
+    cursor: pointer;
+    position: relative;
+    flex: 1;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.language-switcher button:first-child {
+    border-radius: 30px 0 0 30px; /* Redondeado solo en la esquina izquierda */
+}
+
+.language-switcher button:last-child {
+    border-radius: 0 30px 30px 0; /* Redondeado solo en la esquina derecha */
+}
+
+.language-switcher button:hover,
+.language-switcher button.active {
+    background-color: #FF3800; /* Color de fondo al hacer hover o cuando es activo */
+    color: #FFFFFF;
+}
+
+.language-switcher button + button {
+    position: relative;
+}
+
+.language-switcher button + button::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: white;
 }
 
 
@@ -247,6 +307,145 @@ body {
     font-weight: 300;
     text-align: left;
 }
+
+/* Developers Section */
+.developers-section {
+    width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #F4F8FB;
+}
+
+.developers-section .section-title {
+    font-size: 2.5rem;
+    color: #FF3800;
+    margin-bottom: 1rem;
+}
+
+.developers-section .section-subtitle {
+    font-size: 1.25rem;
+    color: #00141A;
+    margin-bottom: 2rem;
+}
+
+.developer-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.developer-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.developer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.developer-photo {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%; /* Redondea la imagen para hacerla circular */
+    margin: 1rem auto;
+    border: 3px solid #FF3800; /* Agrega un borde de color */
+}
+
+.developer-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen para que se ajuste al círculo */
+    border-radius: 50%; /* Aplica el efecto circular */
+}
+
+
+.developer-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #00141A;
+    margin: 1rem 0 0.25rem;
+}
+
+.developer-role {
+    font-size: 1rem;
+    color: #FF3800;
+    margin-bottom: 0.5rem;
+}
+
+.developer-bio {
+    font-size: 0.875rem;
+    color: #555;
+    padding: 0 1rem 1.5rem;
+}
+
+/* About Section */
+.about-section {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: #00141A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-section .section-title {
+    font-size: 2.5rem;
+    color: #FF3800;
+    margin-bottom: 2rem;
+}
+
+.about-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #00141A;
+    margin-bottom: 1rem;
+}
+
+.video-container {
+    background-color: #E5F9FF;
+
+    border-radius: 10px;
+    height: auto; /* Ajusta el tamaño según sea necesario */
+    width: auto;
+    margin-top: 1rem;
+}
+
 
 .pricing-section {
     text-align: center;
@@ -554,6 +753,19 @@ body {
     .feature-item p {
         font-size: 16px;
     }
+
+    //developer section
+    
+    .developer-cards {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .developer-card {
+        width: 100%;
+    }
+
+
 
     /* Pricing Section */
     .pricing-section {

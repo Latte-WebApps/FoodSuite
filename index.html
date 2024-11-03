@@ -3,44 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
   <link href="styles.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/996f4b939f.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.11.5/i18next.js"></script>
+  <script src="https://unpkg.com/i18next@23.11.5/dist/umd/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend@1.4.0/i18nextHttpBackend.min.js"></script>
   <script src="main.js"></script>
   <title>Food Suit</title>
 </head>
 <body>
- <!-- Home Section -->
- <section id="home" class="home-section">
-  <nav class="navbar">
-    <div class="navbar-hamburger" id="hamburger-menu">
-      <i class="fas fa-bars"></i>
-    </div>
-    <div class="navbar-brand"><img src="./assets/images/FOODSUIT.svg" alt="foodsuit brand logo" width="80px"></div>
-    
-    <ul class="navbar-menu" id="navbar-menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-    </ul>
-    
-    <button class="btn-try-demo"><a href="https://foodsuit.netlify.app/">TRY DEMO</a></button>
-  </nav>
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <nav class="navbar">
+      <div class="navbar-hamburger" id="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="navbar-brand"><img src="./assets/images/foodsuit.svg" alt="foodsuit brand logo" width="80px"></div>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a href="#home" data-i18n="home"></a></li>
+        <li><a href="#about-us" data-i18n="about">About us</a></li>
+        <li><a href="#features" data-i18n="features">Features</a></li>
+        <li><a href="#pricing" data-i18n="pricing">Pricing</a></li>
+        <li><a href="#team" data-i18n="team">Team</a></li>
+      </ul>
+      <div class="language-switcher">
+        <button id="btn-en"><span>EN</span></button>
+        <button id="btn-es"><span>ES</span></button>
+      </div>
+        <!--  </div>-->
+            </nav>
+            <div class="home-content">
+              <div class="home-text">
+                <h1 data-i18n="transform_management">Transform the Management of your Restaurant with Our Comprehensive Solution</h1>
+                <p data-i18n="optimize_workflow">Optimize your workflow, control inventory, and improve efficiency with an intuitive interface.</p>
+                <button class="btn-try-demo"><a href="https://foodsuit.netlify.app/" data-i18n="try_demo">TRY DEMO!</a></button>
+              </div>
+              <div class="home-image">
+                <img src="./assets/images/image 2.svg" alt="Man thinking at his desk in an office">
+              </div>
+            </div>
+          </section>
 
-  <div class="home-content">
-    <div class="home-text">
-      <h1>Transform the Management of your Restaurant with Our Comprehensive Solution</h1>
-      <p>Optimize your workflow, control inventory, and improve efficiency with an intuitive interface.</p>
-      <button class="btn-try-demo">TRY DEMO!</button>
+          <!-- About Section -->
+<section id="about-us" class="about-section">
+  <h2 class="section-title" data-i18n="about">ABOUT US</h2>
+  <div class="about-cards">
+
+    <div class="about-card">
+      <h3 class="about-title" data-i18n="about_product">About the Product</h3>
+      <div class="video-container" id="product-video">
+
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/6mk6xxU0VAI"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+          </iframe>
+
+      </div>
     </div>
-    <div class="home-image">
-      <img src="./assets/images/image 2.svg" alt="Man thinking at his desk in an office">
+
+    <!-- About the Team Card -->
+    <div class="about-card">
+      <h3 class="about-title" data-i18n="about_team">About the Team</h3>
+      <div class="video-container" id="team-video">
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/RoTM0VtSfTo"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+          </iframe>
+      </div>
     </div>
   </div>
 </section>
+
 
   <!-- Problems Section -->
   <section class="problems-section">
@@ -48,137 +84,202 @@
       <img src="./assets/images/image 3.svg" alt="Stressed man leaning on his desk looking at his laptop">
     </div>
     <div class="problems-text">
-      <h2>Are you having trouble keeping control of your inventory?</h2>
-      <p>Managing inventory in a restaurant can be overwhelming. Inconsistencies, deviations in stock, and lack of real-time updating can lead to significant losses and operational problems. Our app simplifies inventory management with easy-to-use tools that allow you to monitor and update your stock instantly, avoiding costly mistakes and improving operational efficiency.</p>
+      <h2 data-i18n="problems_heading">Are you having trouble keeping control of your inventory?</h2>
+      <p data-i18n="problems_description">Managing inventory in a restaurant can be overwhelming. Inconsistencies, deviations in stock, and lack of real-time updating can lead to significant losses and operational problems. Our app simplifies inventory management with easy-to-use tools that allow you to monitor and update your stock instantly, avoiding costly mistakes and improving operational efficiency.</p>
     </div>
   </section>
+
+  
+
+
 
   <!-- Features Section -->
-  <section id="features" class="features-section">
-
-    <h2>The Perfect Solution for Efficient Management</h2>
-
-    <div class="features-list">
-      <div class="feature-item">
-        <div class="icon">  <img src="./assets/icons/location2.png" alt="location icon" width="40px" > </div>
-          <p>
-            
-          Manage your inventory from any location with real-time updates and alerts, ensuring you stay in control no matter where you are.</p>
+<section id="features" class="features-section">
+  <h2 data-i18n="efficient_management">The Perfect Solution for Efficient Management</h2>
+  <div class="features-list">
+    <div class="feature-item">
+      <div class="icon">
+        <img src="./assets/icons/location2.png" alt="location icon" width="40px">
       </div>
-      <div class="feature-item">
-        <div class="icon"><img src="./assets/icons/cloud.png" alt="bar chart icon" width="40px" > </div>
-        <p>Sync data across all devices in real-time, ensuring consistency and up-to-date information.</p>
-      </div>
-      <div class="feature-item">
-        <div class="icon"><img src="./assets/icons/chart.png" alt="bar chart icon" width="40px" ></div>
-        <p>Generate detailed reports to assess team performance and sales.</p>
-      </div>
-      <div class="feature-item">
-        <div class="icon"><img src="./assets/icons/hourglass.png" alt="bar chart icon" width="40px" ></div>
-        <p>Enhance your restaurant's productivity with streamlined processes and automated tasks.</p>
-      </div>
-      <div class="feature-item">
-        <div class="icon"><img src="./assets/icons/visibility.png" alt="bar chart icon" width="40px" ></div>
-        <p>Access an easy-to-use platform that streamlines daily operations.</p>
-      </div>
+      <p data-i18n="features_section.0">Manage your inventory from any location with real-time updates and alerts, ensuring you stay in control no matter where you are.</p>
     </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section id="pricing" class="pricing-section">
-    <h2 class="section-title">Pricing</h2>
-    <h3 class="section-subtitle">Simple, transparent pricing</h3>
-    <div class="pricing-cards">
-        
-        <!-- Card 1: Basic -->
-        <div class="pricing-card basic">
-            <div class="pricing-header">
-                <p class="pricing-subtitle">For individuals</p>
-                <p class="pricing-title">Basic</p>
-            </div>
-            <div class="pricing-body">
-                <p class="pricing-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="pricing-price"><span>$99</span> / monthly</p>
-                <p class="pricing-includes">What's included</p>
-                <ul class="pricing-features">
-                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> All analytics features</li>
-                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> Up to 1,000,000 tracked visits</li>
-                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> Premium support</li>
-                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> Up to 10 team members</li>
-              </ul>
-              
-                <button class="btn-get-started">Get started</button>
-            </div>
-        </div>
-        
-        <!-- Card 2: Pro -->
-        <div class="pricing-card pro">
-            <div class="pricing-header">
-                <p class="pricing-subtitle">For startups</p>
-                <p class="pricing-title">Pro</p>
-            </div>
-            <div class="pricing-body">
-                <p class="pricing-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="pricing-price"><span>$199</span> / monthly</p>
-                <p class="pricing-includes">What's included</p>
-                <ul class="pricing-features">
-                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> All analytics features</li>
-                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> Up to 1,000,000 tracked visits</li>
-                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> Premium support</li>
-                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> Up to 10 team members</li>
-              </ul>
-              
-                <button class="btn-get-started">Get started</button>
-            </div>
-        </div>
-        
-        <!-- Card 3: Enterprise -->
-        <div class="pricing-card enterprise">
-            <div class="pricing-header">
-                <p class="pricing-subtitle">For big companies</p>
-                <p class="pricing-title">Enterprise</p>
-            </div>
-            <div class="pricing-body">
-                <p class="pricing-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="pricing-price"><span>$399</span> / monthly</p>
-                <p class="pricing-includes">What's included</p>
-                <ul class="pricing-features">
-                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> All analytics features</li>
-                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> Up to 1,000,000 tracked visits</li>
-                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> Premium support</li>
-                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> Up to 10 team members</li>
-              </ul>
-              
-                <button class="btn-get-started">Get started</button>
-            </div>
-        </div>
-        
+    <div class="feature-item">
+      <div class="icon">
+        <img src="./assets/icons/cloud.png" alt="cloud icon" width="40px">
+      </div>
+      <p data-i18n="features_section.1">Sync data across all devices in real-time, ensuring consistency and up-to-date information.</p>
     </div>
+    <div class="feature-item">
+      <div class="icon">
+        <img src="./assets/icons/chart.png" alt="chart icon" width="40px">
+      </div>
+      <p data-i18n="features_section.2">Generate detailed reports to assess team performance and sales.</p>
+    </div>
+    <diV class="feature-item">
+      <div class="icon">
+        <img src="./assets/icons/chart.png" alt="chart icon" width="40px">
+      </div>
+      <p data-i18n="features_section.3">Enhance your restaurant's productivity with streamlined processes and automated tasks.</p>
+    </div>
+    <div class="feature-item">
+      <div class="icon">
+        <img src="./assets/icons/chart.png" alt="chart icon" width="40px">
+      </div>
+      <p data-i18n="features_section.4">Access an easy-to-use platform that streamlines daily operations.</p>
+    </div>
+  </div>
 </section>
+
+
+
+
+<!-- Pricing Section -->
+<section id="pricing" class="pricing-section">
+  <h2 class="section-title" data-i18n="pricing_title">Pricing</h2>
+  <h3 class="section-subtitle" data-i18n="simple_pricing">Simple, transparent pricing</h3>
+  <div class="pricing-cards">
+      
+      <div class="pricing-card basic">
+          <div class="pricing-header">
+              <p class="pricing-subtitle" data-i18n="basic.subtitle">For individuals</p>
+              <p class="pricing-title" data-i18n="basic.title">Basic</p>
+          </div>
+          <div class="pricing-body">
+              <p class="pricing-description" data-i18n="basic.description">Ideal for those who need basic management and inventory control features.</p>
+              <p class="pricing-price" data-i18n="basic.price">$99 / month</p>
+              <p class="pricing-includes" data-i18n="pricing_includes">What's included</p>
+              <ul class="pricing-features">
+                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> <span data-i18n="basic.features.0">All analytics features</span></li>
+                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> <span data-i18n="basic.features.1">Up to 1,000,000 tracked visits</span></li>
+                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> <span data-i18n="basic.features.2">Premium support</span></li>
+                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> <span data-i18n="basic.features.3">Up to 10 team members</span></li>
+              </ul>
+              <button class="btn-get-started" data-i18n="get_started">GET STARTED</button>
+
+          </div>
+      </div>
+
+      <div class="pricing-card pro">
+          <div class="pricing-header">
+              <p class="pricing-subtitle" data-i18n="pro.subtitle">For startups</p>
+              <p class="pricing-title" data-i18n="pro.title">Pro</p>
+          </div>
+          <div class="pricing-body">
+              <p class="pricing-description" data-i18n="pro.description">Perfect for startups that need advanced control.</p>
+              <p class="pricing-price" data-i18n="pro.price">$199 / month</p>
+              <p class="pricing-includes" data-i18n="pricing_includes">What's included</p>
+              <ul class="pricing-features">
+                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> <span data-i18n="pro.features.0">All analytics features</span></li>
+                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> <span data-i18n="pro.features.1">Up to 2,000,000 tracked visits</span></li>
+                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> <span data-i18n="pro.features.2">Dedicated support</span></li>
+                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> <span data-i18n="pro.features.3">Up to 25 team members</span></li>
+              </ul>
+              <button class="btn-get-started" data-i18n="get_started"></button>
+
+          </div>
+      </div>
+
+      <div class="pricing-card enterprise">
+          <div class="pricing-header">
+              <p class="pricing-subtitle" data-i18n="enterprise.subtitle">For big companies</p>
+              <p class="pricing-title" data-i18n="enterprise.title">Enterprise</p>
+          </div>
+          <div class="pricing-body">
+              <p class="pricing-description" data-i18n="enterprise.description">For businesses that require large-scale management and support.</p>
+              <p class="pricing-price" data-i18n="enterprise.price">$399 / month</p>
+              <p class="pricing-includes" data-i18n="pricing_includes">What's included</p>
+              <ul class="pricing-features">
+                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> <span data-i18n="enterprise.features.0">Advanced analytics features</span></li>
+                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> <span data-i18n="enterprise.features.1">Unlimited tracked visits</span></li>
+                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> <span data-i18n="enterprise.features.2">24/7 support</span></li>
+                  <li><img src="./assets/icons/check.png" class="icon" width="20px" alt="check icon"> <span data-i18n="enterprise.features.3">Unlimited team members</span></li>
+              </ul>
+              <button class="btn-get-started" data-i18n="get_started"></button>
+
+          </div>
+      </div>
+
+  </div>
+</section>
+
+
+
+<!-- Developers Section -->
+<section id="team" class="developers-section">
+
+  <h2 class="section-title" data-i18n="members">Team</h2>
+  <div class="developer-cards">
+      <!-- Developer Card 1 -->
+      <div class="developer-card">
+          <div class="developer-photo">
+              <img src="./assets/images/team-members/JosuePaiva.jpeg" alt="josue paiva">
+          </div>
+          <h3 class="developer-name" >Josue Paiva</h3>
+          <p class="developer-role" data-i18n="developer">Developer</p>
+          <p class="developer-bio" data-i18n="carreer">Software Engineer</p>
+      </div>
+
+      <div class="developer-card">
+        <div class="developer-photo">
+            <img src="./assets/images/team-members/pacheco.jpg" alt="sebastian pacheco">
+        </div>
+        <h3 class="developer-name"  >Sebastian Pacheco</h3>
+        <p class="developer-role" data-i18n="developer" >Developer</p>
+        <p class="developer-bio" data-i18n="carreer" >Software Engineer</p>
+    </div>
+
+      <div class="developer-card">
+        <div class="developer-photo">
+            <img src="./assets/images/team-members/piero.jpeg" alt="Piero Velarde ">
+        </div>
+        <h3 class="developer-name" >Piero Velarde </h3>
+        <p class="developer-role" data-i18n="developer" >Developer</p>
+        <p class="developer-bio" data-i18n="carreer" >Software Engineer</p>
+    </div>
+
+      <div class="developer-card">
+        <div class="developer-photo">
+            <img src="./assets/images/team-members/jp.png"  alt="Jean Grandez ">
+        </div>
+        <h3 class="developer-name" >Jean Grandez </h3>
+        <p class="developer-role" data-i18n="developer" >Developer</p>
+        <p class="developer-bio" data-i18n="carreer" >Software Engineer</p>
+    </div>
+
+      <div class="developer-card">
+        <div class="developer-photo">
+            <img src="./assets/images/team-members/bernaola.JPG" alt="andre bernaola">
+        </div>
+        <h3 class="developer-name" >Andre Bernaola</h3>
+        <p class="developer-role" data-i18n="developer" >Developer</p>
+        <p class="developer-bio" data-i18n="carreer" >Software Engineer</p>
+    </div>
+
+  </div>
+</section>
+
 
 
   <!-- Footer Section -->
   <footer class="footer-section">
     <div class="footer-content">
-      <h3>Latte Company. We're here</h3>
-      <p>Hello, we are Latte, and our app FoodSuite is designed to help you manage your restaurant efficiently. We're committed to providing the right tools and insights to help you achieve the best results in your business. Just insight.</p>
-      <button class="btn-try-demo-footer">TRY DEMO!</button>
+      <h3 data-i18n="footer_heading">Latte Company. We're here</h3>
+      <p data-i18n="footer_description">Hello, we are Latte, and our app FoodSuite is designed to help you manage your restaurant efficiently. We're committed to providing the right tools and insights to help you achieve the best results in your business.</p>
+      <button class="btn-try-demo-footer">
+        <a href="https://foodsuit.netlify.app/" data-i18n="try_demo">TRY DEMO!</a>
+      </button>
     </div>
     <div class="footer-bottom">
       <div class="footer-logo">
-        <div><img src="./assets/images/orange-foodsuit.svg" alt="foodsuit brand logo"></div>
+        <img src="./assets/images/orange-foodsuit.svg" alt="foodsuit brand logo">
       </div>
-      <p>&copy; 2024 Latte. All Rights Reserved.</p>
-      <ul class="social-icons flex flex-row text-center items-center justify-center gap-4">
-        <li class="icon-item"><i class="fa-brands fa-facebook-f fa-2xs" style="color: #e5f9ff;"></i></li>
+      <p data-i18n="footer_copyright">&copy; 2024 Latte. All Rights Reserved.</p>
+      <ul class="social-icons">
+        <li class="icon-item"><i class="fa-brands fa-facebook-f fa-2xs"></i></li>
         <li class="icon-item"><i class="fa-brands fa-linkedin-in fa-2xs"></i></li>
         <li class="icon-item"><i class="fa-brands fa-x-twitter fa-2xs"></i></li>
-        
       </ul>
-      
     </div>
   </footer>
-
-  
 </body>
 </html>
