@@ -333,13 +333,14 @@ a {
 /* Developers Section */
 .developers-section {
     width: 100%;
+    height: auto;
     padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #F4F8FB;
+    background-color: ##E5F9FF;
 }
 
 .developers-section .section-title {
@@ -354,12 +355,34 @@ a {
     margin-bottom: 2rem;
 }
 
+.developers-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    gap: 2rem;
+}
+
 .developer-cards {
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
     margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.developers-video {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.developers-video:hover {
+    transform: translateY(-10px);
 }
 
 .developer-card {
